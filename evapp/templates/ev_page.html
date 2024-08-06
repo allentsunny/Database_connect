@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet"href="{% static 'ev.css' %}">
+    <body>
+        <h1>ev_page</h1>
+        <p>The page Enviroment</p>
+        <div>
+            <form method="Post" action="">
+                {% csrf_token %}
+                {{form.as_p}}
+                <!-- <label for="Username">Username</label>
+                <input type="text"id="Username" name="Username" required>
+
+                <label for ="email">Email:</label>
+                <input type="email"id="email" name="email" required>
+
+                <label for=" password">Password</label>
+                <input type="password"id="Password" required> -->
+
+                <button type="submit">Register</button>
+                
+            </form>
+        </div>
+    </body>
+</html>
